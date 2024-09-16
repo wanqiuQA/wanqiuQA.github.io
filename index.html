@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暖一杯清酒</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="./黑子.jpg" alt="暖一杯清酒" width="80" height="80">
+        <h3>暖一杯清酒</h3>
+        <p>座右铭：不是强大者会胜利，而是胜利者必然强大</p>
+        <p>打赢过冠军职业，成都ag钟意</p>
+        <p>世界不同情弱者，机会遵从于欲望</p>
+        <p>大神巅峰历史</p>
+        <a href="https://dreamfireq.github.io/">友情链接</a>
+
+        <p>快来为大神点赞吧</p>
+
+        <button id="countButton">点赞支持！</button>
+        <div class="counter" id="counterDisplay">计数：0</div> <!-- 显示计数的区域 -->
+    </div>
+
+    <script>
+        let count = 0; // 初始化计数器
+        const button = document.getElementById('countButton');
+        const counterDisplay = document.getElementById('counterDisplay');
+
+        button.addEventListener('click', function () {
+            count++; // 点击时计数加1
+            counterDisplay.textContent = '计数：' + count; // 更新计数显示
+        });
+    </script>
+
+</body>
+
+</html>
